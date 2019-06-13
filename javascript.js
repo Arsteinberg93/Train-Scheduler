@@ -89,7 +89,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
     // Next Train
     var nextTrain = moment().add(tMinutesTillTrain, "minutes");
-    var comingTrain = moment(nextTrain).format("hh:mm");
+    var comingTrain = moment(nextTrain).format('LT');
 
 
     $("#train-table > tbody").append("<tr><td>" + trainName + "</td><td>" + trainDest + "</td><td>" +
