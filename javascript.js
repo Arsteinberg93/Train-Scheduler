@@ -40,7 +40,6 @@ $("#add-train-btn").on("click", function(event) {
     console.log(newTrain.frequency);
     console.log(newTrain.time);
 
-    // Alert
     alert("Train successfully added");
 
     // Clears all of the text-boxes
